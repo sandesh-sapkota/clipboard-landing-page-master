@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 18px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background: url(./images/bg-header-desktop.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    max-width: 100%;
+}
+
+.logo-header img{
+    width: 85px;
+}
+
+.heading-header{
+    text-align: center;
+    max-width: 55%;
+    margin: 30px 0;
+}
+
+.heading-header h1{
+    padding-bottom: 10px;
+}
+
+p{
+    color: hsl(198, 4%, 47%);
+    font-weight: 400;
+}
+
+h1,h2,h4{
+    color: hsl(203, 6%, 28%);
+    font-weight: 600;
+}
+
+.buttons-header button{
+    padding: 10px 25px;
+    background: transparent;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.buttons-header .ios-button{
+    background-color: hsl(171, 66%, 44%) ;
+    box-shadow: 9px 17px 21px -15px hsl(171, 66%, 44%);
+}
+.buttons-header .mac-button{
+    background-color: hsl(233, 100%, 69%) ;
+    box-shadow: 9px 17px 21px -15px hsl(233, 100%, 69%);
+}
+
+.buttons-header .ios-button:hover{
+    background-color: hsl(171, 56%, 28%) ;
+}
+
+.buttons-header .mac-button:hover{
+    background-color: hsl(233, 43%, 35%) ;
+}
+
+
+ .oneSection-header{
+    text-align: center;
+    max-width: 55%;
+    margin:100px auto;
+ }
+
+ .oneSection-header h2{
+    padding: 15px 0;
+
+ }
+
+ .oneSection .sub-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 60px;
+ }
+
+ .oneSection .sub-section img{
+    width: 100%;
+    height: 100%;
+ }
+ .oneSection .sub-section .sub-section-content span p{
+    text-align: left;
+    padding: 15px 0;
+ }
+
+ .oneSection .sub-section .sub-section-content{
+    max-width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+ }
+
+ .twoSection{
+    max-width: 55%;
+    margin: 90px auto;
+ }
+  .twoSection h2,p{
+    text-align: center;
+  }
+
+  .twoSection p{
+    padding:10px 0px ;
+  }
+
+  .twoSection img{
+    height: 100%;
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .threeSection span{
+    max-width: 55%;
+    text-align: center;
+  }
+
+.threeSection span h2{
+    padding-bottom: 10px;
+}
+
+.threeSection .service-list{
+    max-width: 75%;
+    margin:70px auto;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(100px,1fr));
+    gap: 30px;
+}
+
+.blacklist,.snippets,.preview{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service-list img{
+    width: 15%;
+    height: 100%;
+    object-fit: contain;
+    margin: auto;
+    
+}
+
+.service-list h4,p {
+    text-align: center;
+}
+
+.company-list{
+    max-width: 75%;
+    margin: 120px auto;
+    display: flex;
+    gap: 90px;
+}
+
+.company-list img{
+    object-fit: contain;
+}
+
+.lastSection{
+    max-width: 50%;
+    margin: 70px auto;
+    text-align: center;
+}
+
+.lastSection p{
+    padding: 30px 0;
+}
+
+.buttons-last button{
+    padding: 10px 25px;
+    background: transparent;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.buttons-last .ios-button{
+    background-color: hsl(171, 66%, 44%) ;
+    box-shadow: 9px 17px 21px -15px hsl(171, 66%, 44%);
+}
+.buttons-last .mac-button{
+    background-color: hsl(233, 100%, 69%) ;
+    box-shadow: 9px 17px 21px -15px hsl(233, 100%, 69%);
+}
+
+.buttons-last .ios-button:hover{
+    background-color: hsl(171, 56%, 28%) ;
+}
+
+.buttons-last .mac-button:hover{
+    background-color: hsl(233, 43%, 35%) ;
+}
+
+
+footer{
+    display: grid;
+    grid-template-columns: 25% 60% 25%;
+    align-items: center;
+    background-color:hsl(205, 27%, 91%) ;
+    height: 130px;
+}
+
+footer .logo{
+    width: 50px;
+    height: 50px;
+    margin: 0 90px;
+
+}
+
+footer ul{
+    list-style: none;
+    max-width: 50%;
+}
+
+ul li{
+    display: inline-block;
+    margin: 5px 20px;
+}
+
+li a{
+     color: hsl(191, 5%, 42%);
+     font-size: 17px;
+}
+
+.footer-icon{
+    display: flex ;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-icon a img:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width:765px){
+    header{
+        background: url(./images/bg-header-mobile.png);
+        background-size: cover;
+        padding: 40px 10px;
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+
+    .heading-header{
+        width: 100%;
+    }
+
+    .oneSection .oneSection-header{
+        width: 100%; 
+    }
+
+    .buttons-header button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        
+        
+    }
+
+    .buttons-header .ios-button{
+        margin: 15px 0;
+    }
+
+    .oneSection .sub-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .oneSection .sub-section span h4 {
+        text-align: center;
+        font-size: 23px;
+        
+    }
+   
+
+    .oneSection .sub-section img{
+        width: 80%;
+        height: 100%;
+     }
+
+     .twoSection{
+        max-width: 85%;
+        margin: 90px auto;
+     }
+
+     .threeSection {
+        width: 80%;
+        margin: 0 auto;
+     }
+
+     .threeSection .service-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+
+     .company-list{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+
+     .lastSection{
+        width: 100%;
+     }
+
+     .buttons-last button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        
+        
+    }
+
+    .buttons-last .ios-button{
+        margin: 15px 0;
+    }
+
+    footer{
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer-content{
+        text-align: center;
+    }
+
+    .footer-icon{
+        display: flex;
+        gap: 40px;
+    }
+
+
+     
+
+}
+
+
+
+
+
+
+
+
+
